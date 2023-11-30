@@ -43,7 +43,7 @@ export const RegisterPage = () => {
         }
     }, [errorMessage]);
     return (
-        <div className="col-md-6 mx-5 mt-5 login-form-2">
+        <div className="col-md-6 mx-5 mt-5 register-form-2">
             <h3>Registro</h3>
             <form onSubmit={submitRegister}>
                 <div className="form-group mb-2">

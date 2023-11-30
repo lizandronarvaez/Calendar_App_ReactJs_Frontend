@@ -35,39 +35,49 @@ export const LoginPage = () => {
 
   return (
 
-    <div className="container login-container">
-
-      <div className="col-md-10 m-auto mt-5 login-form-1">
-        <h3>Login</h3>
-        <form onSubmit={submitLogin}>
-          <div className="form-group mb-2">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Correo"
-              name='email'
-              value={email}
-              onChange={onInputChange}
-            />
-          </div>
-          <div className="form-group mb-2">
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Contraseña"
-              name='password'
-              value={password}
-              onChange={onInputChange}
-            />
-          </div>
-          <div className="d-grid gap-2">
-            <input
-              type="submit"
-              className="btnSubmit"
-              value="Login"
-            />
-          </div>
-        </form>
+    <div className="login_page">
+      <div className='login_page-img'>
+        <h1>Citas KingWash</h1>
+        <img src="../../../../public/kingwash.png" alt="kigwash" />
+      </div>
+      <div className="login_page-form col-md-10 m-auto">
+        <div className='login_page-form-header'>
+          <img src="../../../../public/kingwash.png" alt="kingwash" />
+          <h3>Lavadero KingWash</h3>
+        </div>
+        <hr />
+        <div className='login_page-body'>
+          <form onSubmit={submitLogin}>
+            <div className="form-group mb-2">
+              <input
+                type="text"
+                className="form-control py-3"
+                placeholder="Correo"
+                name='email'
+                value={email}
+                onChange={onInputChange}
+              />
+            </div>
+            <div className="form-group mb-2">
+              <input
+                type="password"
+                className="form-control py-3"
+                placeholder="Contraseña"
+                name='password'
+                value={password}
+                onChange={onInputChange}
+              />
+            </div>
+            <div className="d-grid gap-2">
+              <input
+                type="submit"
+                className="btnSubmit py-3"
+                value="Login"
+              />
+              <hr />
+            </div>
+          </form>
+        </div>
       </div>
 
     </div>
