@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     min-height: 100vh;
-    background-image: url("../../../assets/kingwash.png");
+    background-image: url("../../../../public/images/kingwash.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
