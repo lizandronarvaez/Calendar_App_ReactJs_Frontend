@@ -11,7 +11,7 @@ export const NavBar = () => {
                 &nbsp;
                 Gestión Cita KingWash
             </span>
-            <img src="../../../public/kingwash.png" alt="img" />
+            <img src="../../assets/kingwash.png" alt="img" />
             <button
                 onClick={startLogout}
                 className="nav_button"
