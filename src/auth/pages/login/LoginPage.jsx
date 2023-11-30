@@ -1,9 +1,8 @@
-
 import { useEffect } from 'react';
 import { useAuthStore, useForm } from '../../../hooks';
 import './LoginPage.css';
 import Swal from 'sweetalert2/dist/sweetalert2.all';
-
+import KingWash from "../../../../public/images/kingwash.png";
 const loginFormFields = {
   email: "",
   password: ""
@@ -38,11 +37,11 @@ export const LoginPage = () => {
     <div className="login_page">
       <div className='login_page-img'>
         <h1>Citas KingWash</h1>
-        <img src="../../../../public/kingwash.png" alt="kigwash" />
+        <img src={KingWash} alt="kigwash" />
       </div>
       <div className="login_page-form col-md-10 m-auto">
         <div className='login_page-form-header'>
-          <img src="../../../../public/kingwash.png" alt="kingwash" />
+          <img src={KingWash} alt="kingwash" />
           <h3>Lavadero KingWash</h3>
         </div>
         <hr />

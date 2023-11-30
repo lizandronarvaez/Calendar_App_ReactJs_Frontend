@@ -1,5 +1,6 @@
 import { useAuthStore } from "../../hooks"
 import "./Navbar.css";
+import KingWash from "../../../public/images/kingwash.png"
 export const NavBar = () => {
 
     const { startLogout, user } = useAuthStore();
@@ -11,7 +12,7 @@ export const NavBar = () => {
                 &nbsp;
                 Gestión Cita KingWash
             </span>
-            <img src="../../../public/images/kingwash.png" alt="img" />
+            <img src={KingWash} alt="kingwash" />
             <button
                 onClick={startLogout}
                 className="nav_button"
